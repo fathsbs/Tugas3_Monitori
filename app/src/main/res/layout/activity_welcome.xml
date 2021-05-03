@@ -60,7 +60,8 @@
             android:textStyle="bold"
             android:textColor="@color/Black3"
             android:textSize="@dimen/dimen18sp"
-            android:fontFamily="@font/rubik_regular"/>
+            android:fontFamily="@font/rubik_regular"
+            android:onClick="pindahLogin"/>
     </RelativeLayout>
 
 </RelativeLayout>

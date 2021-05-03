@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".biodataActivity">
+
+
+        <TextView
+            android:id="@+id/teks1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginTop="@dimen/dimen80dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Nama Panggilan Kamu"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks1"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginTop="@dimen/dimen30dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:backgroundTint="@color/CoolGrey"
+            android:hint="Contoh : Budi"
+            android:paddingBottom="@dimen/dimen25dp"
+            android:textSize="@dimen/dimen25sp" />
+
+        <TextView
+            android:id="@+id/teks2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_nama"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginTop="@dimen/dimen30dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Umur Kamu"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_umur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks2"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginTop="@dimen/dimen30dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:backgroundTint="@color/CoolGrey"
+            android:hint="Contoh : Budi"
+            android:paddingBottom="@dimen/dimen25dp"
+            android:textSize="@dimen/dimen25sp" />
+
+
+        <Button
+            android:id="@+id/btnMulai"
+            android:layout_below="@id/input_umur"
+            android:layout_width="@dimen/dimen300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen420dp"
+            android:layout_marginBottom="@dimen/dimen50dp"
+            android:background="@drawable/btn_yellow"
+            android:fontFamily="@font/nunito_bold"
+            android:onClick="pindahHai"
+            android:text="Selanjutnya"
+            android:textAllCaps="false"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

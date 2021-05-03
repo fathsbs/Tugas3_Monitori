@@ -7,16 +7,15 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class welcomeActivity extends AppCompatActivity {
-
+public class biodataActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        setContentView(R.layout.activity_biodata);
     }
 
-    public void pindahLogin(View view) {
-        Intent intent = new Intent(this, loginActivity.class);
+    public void pindahHai(View view){
+        Intent intent = new Intent(this,haiActivity.class);
         startActivity(intent);
     }
 }

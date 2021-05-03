@@ -4,157 +4,168 @@
     android:id="@+id/activity_welcome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen5dp"
     android:background="@color/White3"
     android:orientation="vertical"
-    tools:context=".welcomeActivity">
+    tools:context=".loginActivity">
 
-
-    <TextView
-        android:id="@+id/teks1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dimen25dp"
-        android:layout_marginTop="@dimen/dimen50dp"
-        android:fontFamily="@font/nunito_bold"
-        android:text="Kode Keluarga"
-        android:textColor="@color/black"
-        android:textSize="@dimen/dimen34sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/teks2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/teks1"
-        android:layout_marginLeft="@dimen/dimen25dp"
-        android:layout_marginTop="@dimen/dimen10dp"
-        android:fontFamily="@font/rubik_regular"
-        android:text="Ketikkan kode keluarga yang Ayah Bunda"
-        android:textColor="@color/Black3"
-        android:textSize="@dimen/dimen25sp" />
-
-    <TextView
-        android:id="@+id/teks3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/teks2"
-        android:layout_marginLeft="@dimen/dimen25dp"
-        android:fontFamily="@font/rubik_regular"
-        android:text="miliki disini"
-        android:textColor="@color/Black3"
-        android:textSize="@dimen/dimen25sp" />
-
-    <EditText
-        android:id="@+id/kode_keluarga"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen70dp"
-        android:layout_below="@id/teks3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/dimen30dp"
-        android:layout_marginBottom="@dimen/dimen30dp"
-        android:layout_marginLeft="@dimen/dimen50dp"
-        android:layout_marginRight="@dimen/dimen50dp"
-        android:background="@drawable/input_box"
-        android:hint="A1B2C3"
-        android:textStyle="bold"
-        android:padding="@dimen/dimen25dp"
-        android:textAlignment="center"
-        android:textColorHint="@color/Black3" />
-
-    <TextView
-        android:id="@+id/teks4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/kode_keluarga"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/dimen25dp"
-        android:fontFamily="@font/rubik_regular"
-        android:text="Dengan menekan tombol masuk berarti anda menyetujui"
-        android:textColor="@color/Black3"
-        android:textSize="@dimen/dimen16sp" />
-
-    <TextView
-        android:id="@+id/tek5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/teks4"
-
-        android:layout_marginLeft="95dp"
-        android:fontFamily="@font/rubik_regular"
-        android:text="Ketentuan pengguna"
-        android:textColor="@color/Black3"
-        android:textStyle="bold"
-        android:textSize="@dimen/dimen16sp" />
-
-    <TextView
-        android:id="@+id/teks6"
-        android:layout_toRightOf="@id/tek5"
-        android:layout_marginLeft="@dimen/dimen3dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/teks4"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/rubik_regular"
-        android:text="dan"
-        android:textColor="@color/Black3"
-        android:textSize="@dimen/dimen16sp" />
-
-    <TextView
-        android:id="@+id/teks7"
-        android:layout_toRightOf="@id/teks6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/teks4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/dimen3dp"
-        android:fontFamily="@font/rubik_regular"
-        android:text="Kebijakan Data"
-        android:textColor="@color/Black3"
-        android:textStyle="bold"
-        android:textSize="@dimen/dimen16sp" />
-
-    <TextView
-        android:id="@+id/teks8"
-        android:layout_toRightOf="@id/teks7"
-        android:layout_marginLeft="@dimen/dimen3dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/teks4"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/rubik_regular"
-        android:text="kami"
-        android:textColor="@color/Black3"
-        android:textSize="@dimen/dimen16sp" />
-
-    <Button
-        android:id="@+id/btnMasuk"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen60dp"
-        android:layout_below="@id/teks8"
-        android:layout_marginTop="@dimen/dimen30dp"
-        android:layout_marginLeft="@dimen/dimen50dp"
-        android:layout_marginRight="@dimen/dimen50dp"
-        android:background="@drawable/btn_yellow"
-        android:fontFamily="@font/rubik_regular"
-        android:gravity="center"
-        android:text="Masuk"
-        android:textAllCaps="false"
-        android:textColor="@color/Black3"
-        android:textSize="@dimen/dimen20sp"
-        android:textStyle="bold" />
 
     <RelativeLayout
+        android:id="@+id/kode_sesi"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/teks1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="@dimen/dimen80dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Kode Keluarga"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/teks2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Ketikkan kode keluarga yang Ayah Bunda"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen25sp" />
+
+        <TextView
+            android:id="@+id/teks3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks2"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="miliki disini"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen25sp" />
+
+        <EditText
+            android:id="@+id/kode_keluarga"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen70dp"
+            android:layout_below="@id/teks3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen50dp"
+            android:layout_marginTop="@dimen/dimen30dp"
+            android:layout_marginRight="@dimen/dimen50dp"
+            android:layout_marginBottom="@dimen/dimen30dp"
+            android:background="@drawable/input_box"
+            android:hint="A1B2C3"
+            android:padding="@dimen/dimen25dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/Black3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/teks4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kode_keluarga"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen25dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Dengan menekan tombol masuk berarti anda menyetujui"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen16sp" />
+
+        <TextView
+            android:id="@+id/tek5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks4"
+
+            android:layout_marginLeft="95dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Ketentuan pengguna"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/teks6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen3dp"
+            android:layout_toRightOf="@id/tek5"
+            android:fontFamily="@font/rubik_regular"
+            android:text="dan"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen16sp" />
+
+        <TextView
+            android:id="@+id/teks7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen3dp"
+            android:layout_toRightOf="@id/teks6"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Kebijakan Data"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/teks8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen3dp"
+            android:layout_toRightOf="@id/teks7"
+            android:fontFamily="@font/rubik_regular"
+            android:text="kami"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen16sp" />
+
+        <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen60dp"
+            android:layout_below="@id/teks8"
+            android:layout_marginLeft="@dimen/dimen50dp"
+            android:layout_marginTop="@dimen/dimen30dp"
+            android:layout_marginRight="@dimen/dimen50dp"
+            android:layout_marginBottom="250dp"
+            android:background="@drawable/btn_yellow"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:onClick="pindahBiodata"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/beli_sesi"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_below="@id/kode_keluarga"
-        android:layout_marginTop="435dp"
+        android:layout_below="@id/kode_sesi"
+
         android:background="@color/white">
 
         <TextView
             android:id="@+id/teks9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen25dp"
+            android:layout_marginTop="@dimen/dimen35dp"
+            android:layout_marginBottom="@dimen/dimen25dp"
             android:fontFamily="@font/rubik_regular"
             android:gravity="center"
             android:text="Belum punya kode keluarga?"
@@ -166,9 +177,10 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen60dp"
             android:layout_below="@id/teks9"
-            android:layout_marginTop="@dimen/dimen16dp"
             android:layout_marginLeft="@dimen/dimen50dp"
+            android:layout_marginTop="@dimen/dimen10dp"
             android:layout_marginRight="@dimen/dimen50dp"
+            android:layout_marginBottom="@dimen/dimen10dp"
             android:background="@drawable/btn_purple"
             android:fontFamily="@font/rubik_regular"
             android:gravity="center"
