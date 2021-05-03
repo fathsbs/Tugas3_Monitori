@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".welcomeActivity"
+    android:background="@color/White3">
+
+    <ImageView
+        android:id="@+id/logo_monitori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_get_start_timitory" />
+
+    <TextView
+        android:id="@+id/teks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitory Membantu Anda"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen20sp"/>
+
+    <TextView
+        android:layout_below="@id/teks1"
+        android:id="@+id/teks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mengontrol HP Anak"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen20sp"/>
+    
+    <RelativeLayout
+        android:layout_below="@id/teks2"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btnMulai"
+            android:gravity="center"
+            android:layout_margin="@dimen/dimen35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_yellow"
+            android:text="MULAI"
+            android:textStyle="bold"
+            android:textColor="@color/Black3"
+            android:fontFamily="@font/rubik_regular"/>
+    </RelativeLayout>
+
+</RelativeLayout>
