@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/logo_monitori"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_get_start_timitory" />
@@ -26,7 +26,7 @@
         android:textStyle="bold"
         android:fontFamily="@font/nunito_bold"
         android:textColor="@color/black"
-        android:textSize="@dimen/dimen20sp"/>
+        android:textSize="30sp"/>
 
     <TextView
         android:layout_below="@id/teks1"
@@ -39,25 +39,27 @@
         android:textStyle="bold"
         android:fontFamily="@font/nunito_bold"
         android:textColor="@color/black"
-        android:textSize="@dimen/dimen20sp"/>
-    
+        android:textSize="@dimen/dimen30sp"/>
+
     <RelativeLayout
         android:layout_below="@id/teks2"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="250dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
 
         <Button
             android:id="@+id/btnMulai"
+            android:textAllCaps="false"
             android:gravity="center"
-            android:layout_margin="@dimen/dimen35dp"
+            android:layout_margin="@dimen/dimen55dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_yellow"
-            android:text="MULAI"
+            android:text="Mulai"
             android:textStyle="bold"
             android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen18sp"
             android:fontFamily="@font/rubik_regular"/>
     </RelativeLayout>
 
