@@ -31,6 +31,8 @@
     <dimen name="dimen350dp">350dp</dimen>
     <dimen name="dimen420dp">420dp</dimen>
     <dimen name="dimen455dp">455dp</dimen>
+    <dimen name="dimen700dp">700dp</dimen>
+
 
     <dimen name="dimen2sp">2sp</dimen>
     <dimen name="dimen5sp">5sp</dimen>

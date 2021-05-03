@@ -1,6 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".haiActivity">
+
+
+        <TextView
+            android:id="@+id/teks1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginTop="@dimen/dimen80dp"
+            android:layout_marginRight="@dimen/dimen5dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Beres! Sekarang"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inputan_nama"
+            android:layout_toRightOf="@id/teks1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen80dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="kamu"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/teks2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks1"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="udah bisa ngecek"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/teks3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks2"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="penggunaan HP mu"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@id/teks3"
+            android:id="@+id/teks4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="tiap hari buat bantu kamu"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@id/teks4"
+            android:id="@+id/teks5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen35dp"
+            android:layout_marginRight="@dimen/dimen35dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="ngatur waktu :)"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen35sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnMulai"
+            android:layout_width="@dimen/dimen300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teks1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen700dp"
+            android:layout_marginBottom="@dimen/dimen50dp"
+            android:background="@drawable/btn_yellow"
+            android:fontFamily="@font/nunito_bold"
+            android:onClick="pindahHai"
+            android:text="Oke"
+            android:textAllCaps="false"
+            android:textColor="@color/Black3"
+            android:textSize="@dimen/dimen18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>
